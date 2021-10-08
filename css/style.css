@@ -702,3 +702,32 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+canvas {
+  height: 300px;
+  font-family: 'Poppins';
+  background: rgb(21, 24, 34);
+}
+
+#canvas-wrap { position:relative } /* Make this a positioned parent */
+
+.webgl
+{
+    position: relative;
+/*    top: 0;
+    right: 0;*/
+    outline: none;
+    padding:  4em 0em;
+    pointer-events: none;
+}
+
+#info {
+  position: absolute;
+  top: 45%;
+  color:  #4595ff;
+  font-size:  66px;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+  display:block;
+}

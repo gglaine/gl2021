@@ -15,6 +15,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
       rel="stylesheet"
     />
+
   </head>
   <body>
     <header class="header">
@@ -23,7 +24,7 @@
           <div class="header__logo-img-cont">
             <img
               src="./assets/png/glsm.png"
-              alt="Ram Maheshwari Logo Image"
+              alt="Guillaume Lainé Logo Image"
               class="header__logo-img"
             />
           </div>
@@ -68,7 +69,7 @@
             </li>
 
             <li class="header__sm-menu-link">
-              <a href="./index.html#about"> A propos</a>
+              <a href="./index.html#about"> À propos</a>
             </li>
 
             <li class="header__sm-menu-link">
@@ -121,9 +122,9 @@
     <section id="about" class="about sec-pad">
       <div class="main-container">
         <h2 class="heading heading-sec heading-sec__mb-med">
-          <span class="heading-sec__main">A propos</span>
+          <span class="heading-sec__main">À propos</span>
           <span class="heading-sec__sub">
-            Je suis développeur fullstack, front, webdesigner. Passioné par le web et les nouvelles technologies. J'aide mes clients à designer leur site, trouver l'inspiration, et les technos les plus efficaces pour leur business.
+            Je suis développeur fullstack, front, webdesigner. Passioné par le web et les nouvelles technologies. J'aide mes clients à designer leur site, trouver l'inspiration, et je cherche les outils les plus efficaces pour propulser leur business et présenter leur meilleure image.
           </span>
         </h2>
         <div class="about__content">
@@ -133,10 +134,8 @@
               <p class="about__content-details-para">
                 Hello ! C'est
                 <strong>Guillaume</strong>
-                Je suis un<strong> développeur front-end </strong> basé à Paris. Je travaille en<strong> remote</strong>
-                et développe des projets d'agence. J'ai collaboré sur des projects de gens talentueux sur des
-                <strong>applications web de e-learning </strong>
-                et développé des sites vitrines pour de grandes sociétés.
+                Je suis un<strong> développeur front-end </strong> basé à Paris. Je travaille en<strong> remote</strong>. J'ai collaboré sur des projects de gens talentueux sur des applications web de
+                <strong> e-learning </strong> populaires comme mediaclasse et développé des sites vitrines pour de grandes sociétés et des studios de créatifs.
               </p>
               <p class="about__content-details-para">
                 Je suis toujours à la recherche de la stack la plus simple et la plus efficace. Je teste toutes les nouvelles librairires front et j'aime créer des projets de 3D sur Blender et des jeux sur Unity.
@@ -186,7 +185,7 @@
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/funcenter-tab.png"
-                alt="Software Screenshot"
+                alt="funcenter"
                 class="projects__row-img"
                 loading="lazy"
               />
@@ -208,7 +207,7 @@
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/storiamac.png"
-                alt="Software Screenshot"
+                alt="storia television"
                 class="projects__row-img"
                 loading="lazy"
               />
@@ -230,7 +229,7 @@
             <div class="projects__row-img-cont">
               <img
                 src="./assets/jpeg/slapss.jpg"
-                alt="Software Screenshot"
+                alt="slaps studio"
                 class="projects__row-img"
                 loading="lazy"
               />
@@ -256,7 +255,10 @@
         <h2 class="heading heading-sec heading-sec__mb-med">
           <span class="heading-sec__main heading-sec__main--lt">Contact</span>
           <span class="heading-sec__sub heading-sec__sub--lt">
-            Vous vous discuter de votre projet ou voulez un devis gratuit ? Contactez-moi directement par téléphone ou écrivez moi un message via le formulaire de contact ci-dessous
+            Vous vous discuter de votre projet ou voulez un devis gratuit ?   écrivez moi un message via le formulaire de contact ci-dessous ou contactez-moi directement par téléphone.
+          </span>
+          <span class="heading-sec__sub heading-sec__sub--lt">
+            <h2>06.19.40.03.05</h2>
           </span>
         </h2>
         <div class="contact__form-container">
@@ -265,7 +267,6 @@
               <label class="contact__form-label" for="name">Votre nom</label>
               <input
                 required
-                placeholder="Enter Your Name"
                 type="text"
                 class="contact__form-input"
                 name="name"
@@ -276,7 +277,6 @@
               <label class="contact__form-label" for="email">Email</label>
               <input
                 required
-                placeholder="Enter Your Email"
                 type="text"
                 class="contact__form-input"
                 name="email"
@@ -290,7 +290,7 @@
                 cols="30"
                 rows="10"
                 class="contact__form-input"
-                placeholder="Enter Your Message"
+                placeholder="Votre message"
                 name="message"
                 id="message"
               ></textarea>
@@ -302,6 +302,15 @@
         </div>
       </div>
     </section>
+    <section>
+      <div id="canvas-wrap">
+        <canvas class="webgl">
+
+        </canvas>
+        <div id="info">Le web est à vous</div>
+      </div>
+    </section>
+
     <footer class="main-footer">
       <div class="main-container">
         <div class="main-footer__upper">
@@ -345,5 +354,7 @@
     </footer>
 
     <script src="./index.js"></script>
+    <script src="./terrain.js" type="module"></script>
+
   </body>
 </html>
